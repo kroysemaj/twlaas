@@ -2,7 +2,7 @@ var http = require('http'),
     fs   = require('fs'),
     express = require('express'),
     app = express(),
-    tw = require('tw.js');
+    tw = require('tw');
 
 function sendLyric() {
   var random = Math.floor(Math.random()*4);

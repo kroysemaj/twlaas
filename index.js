@@ -1,13 +1,20 @@
-var express = require('express');
-var app = express();
+var http = require('http'),
+    fs   = require('fs'),
+    express = require('express'),
+    app = express(),
+    tw = require('tw');
 
-app.set('port', (process.env.PORT || 5000));
-app.use(express.static(__dirname + '/public'));
+function sendLyric() {
+  var random = Math.floor(Math.random()*4);
+  return JSON.stringify(tw[random]);
+};
 
-app.get('/', function(request, response) {
-  response.send('Hello World!');
+app.get('/', function(req, res){
+  res.send(sendLyric());
 });
 
-app.listen(app.get('port'), function() {
-  console.log("Node app is running at localhost:" + app.get('port'));
+app.set('port', (process.env.PORT || 9000));
+
+var server = app.listen(app.get('port'), function() {
+  console.log('Listening on port %d', server.address().port)
 });

@@ -6,7 +6,7 @@ var http = require('http'),
 
 function sendLyric() {
   var random = Math.floor(Math.random()*4);
-  return JSON.stringify(tw[random]);
+  return tw[random];
 };
 
 app.get('/', function(req, res){

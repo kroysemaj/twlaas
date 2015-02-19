@@ -5,7 +5,7 @@ var http = require('http'),
     tw = require('tw');
 
 function sendLyric() {
-  var random = Math.floor(Math.random()*4);
+  var random = return Math.floor(Math.random() * (tw.length - 1)) + 1;;
   return tw[random];
 };
 

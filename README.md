@@ -1,4 +1,4 @@
-# TWLaas
+# TWLaaS
 A web service for retrieving random Tom Waits lyrics... because why not, that's why.
 
 #set up

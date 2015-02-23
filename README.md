@@ -1,7 +1,7 @@
 # TWLaaS
 A web service for retrieving random Tom Waits lyrics... because why not, that's why.
 
-This is a fork and reskin of the [Getting Started with NodeJS on Heroku](https://github.com/heroku/node-js-getting-started.git) example application
+This is a fork and reskin of the [Getting Started with NodeJS](https://github.com/heroku/node-js-getting-started.git) example application
 
 #set up
 This is a barebones Node.js app using [Express 4](http://expressjs.com/).

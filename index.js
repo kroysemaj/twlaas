@@ -10,6 +10,7 @@ function sendLyric() {
 };
 
 app.get('/', function(req, res){
+  res.set('Access-Control-Allow-Origin', '*');
   res.send(sendLyric());
 });
 
